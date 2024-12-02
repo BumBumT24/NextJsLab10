@@ -10,12 +10,14 @@ export default function Navigation() {
         { href: '/strony/kontakt', text: 'Kontakt' }
       ];
   return (
-    <ul>
-      {links.map((link, index) => (
-        <li key={index}>
-          <Link href={link.href}>{link.text}</Link>
-        </li>
-      ))}
-    </ul>
+    <nav className='navbar'>
+      <ul className='nav-list'>
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link href={link.href}>{link.text}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }

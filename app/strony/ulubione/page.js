@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import Navigation from '@/app/components/Navigation';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
+import Tekst from '@/app/components/Tekst';
+import Zdjecie from '@/app/components/zdjecie';
 
 export default function Ulubione() {
     return (
       <div>
-         <h1>Ulubione</h1>
-         <Navigation/>
+        <div className='container'>
+          <div className='content'>
+          <Navigation/>
+          <Header title="Ulubione" subtitle="Witaj na stronie ulubione"/>
+          <Tekst/>
+          <Zdjecie/>
+          </div>
+         </div>
+         <Footer/>
       </div>
     );
   }

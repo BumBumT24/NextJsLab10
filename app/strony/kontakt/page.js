@@ -8,12 +8,15 @@ import Zdjecie from '@/app/components/zdjecie';
 export default function Kontakt() {
     return (
       <div>
-         <Header title="Kontakt" subtitle="Witaj na stronie Kontakt"/>
-         <Navigation/>
-         <Tekst/>
-         <Zdjecie/>
+        <div className='container'>
+          <div className='content'>
+          <Navigation/>
+          <Header title="Kontakt" subtitle="Witaj na stronie Kontakt"/>
+          <Tekst/>
+          <Zdjecie/>
+          </div>
+         </div>
          <Footer/>
-        
       </div>
     );
   }
